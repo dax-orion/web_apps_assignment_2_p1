@@ -1,3 +1,17 @@
 .hasError {
     color: red;
 }
+
+.bookImg {
+    margin: auto;
+    width: 128px;
+    height: 200px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.bookTitle {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
