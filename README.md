@@ -13,6 +13,6 @@ Open index.html in any modern browser (Edge, Chrome, Firefox, etc).
 OR view in github pages [github pages](https://dax-orion.github.io/web_apps_assignment_2_p1)
 
 ## Implementation:
-Website uses [Bootstrap 5](https://getbootstrap.com/), html5, css3
+Website uses [Bootstrap 5](https://getbootstrap.com/), html5, css3 and [Vue.js](https://vuejs.org/)
 
 Built using the [google books search api.](https://developers.google.com/books)
