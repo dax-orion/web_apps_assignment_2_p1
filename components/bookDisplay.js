@@ -12,7 +12,7 @@ app.component('book-display', {
             <a class="list-group-item list-group-item-action active bookTitle" :href="this.bookObj.selfLink">{{ this.bookObj.volumeInfo.title || "Missing Title"}}</a>
             <div class="list-group-item">
                 <div class="bookImg">
-                    <img :src="this.bookObj.volumeInfo.imageLinks.thumbnail">
+                    <img :src="this.bookImage">
                 </div>
             </div>
             <li class="list-group-item">
@@ -54,6 +54,19 @@ app.component('book-display', {
             }
             else {
                 return null;
+            }
+        },
+        bookImage() {
+            if(this.book != null){
+                if(this.bookObj?.volumeInfo?.imageLinks?.thumbnail){
+                    return this.bookObj.volumeInfo.imageLinks.thumbnail;
+                }
+                else {
+                    return "./images/missing_cover.png";
+                }
+            }
+            else {
+                return "./images/missing_cover.png"
             }
         }
     }
